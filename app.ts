@@ -103,11 +103,11 @@ function guessLetter(letter: string, show : string, originalString: string){
 //User interface
 //draw dinamically body part of hang man 
 
-function drawHead () {
+function drawHead (): void{
   $('.draw-area').append( $('<div/>').addClass("body-part head") );
 }
 
-function drawTorso () {
+function drawTorso () : void {
   $('.draw-area').append(
       $('<div/>').addClass("body-part armbox").append(
           $('<div/>').addClass("body-part torso")));
@@ -116,19 +116,19 @@ function drawTorso () {
           $('<div/>').addClass("body-part pelvis")));
 }
 
-function drawLeftArm () {
+function drawLeftArm (): void {
  $('.armbox').prepend( $('<div/>').addClass("body-part leftarm") );
 }
 
-function drawRightArm () {
+function drawRightArm (): void {
  $('.armbox').prepend( $('<div/>').addClass("body-part rightarm") );   
 }
 
-function drawLeftLeg () {
+function drawLeftLeg (): void {
  $('.legbox').prepend( $('<div/>').addClass("body-part leftleg") );   
 }
 
-function drawRightLeg() {
+function drawRightLeg(): void {
  $('.legbox').prepend( $('<div/>').addClass("body-part rightleg") );   
 }
 
