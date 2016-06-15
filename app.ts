@@ -107,7 +107,7 @@ function drawHead (): void{
   $('.draw-area').append( $('<div/>').addClass("body-part head") );
 }
 
-function drawTorso () : void {
+function drawTorso (): void {
   $('.draw-area').append(
       $('<div/>').addClass("body-part armbox").append(
           $('<div/>').addClass("body-part torso")));
