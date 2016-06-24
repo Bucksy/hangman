@@ -7,7 +7,7 @@
     "args": ["--target", "ES5",
              "--outDir", "js",
              "--sourceMap",
-            //  "module", "commonjs",
+             "--module", "commonjs",
              "--watch",
              "app.ts"],
     "showOutput": "silent",
